@@ -1,2 +1,2 @@
 # ShreyanshFile
-Author Shreyansh Pudipeddi
+Author - Shreyansh Pudipeddi
