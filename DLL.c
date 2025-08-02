@@ -137,14 +137,13 @@ void DeletionAtpos(Node** head, int pos) {
         return;
     }
 
-    for (int i = 1; i < pos && temp != NULL; i++)
-        temp = temp->next;
-
-    if (temp == NULL) {
+    for (int i = 1; i < pos; i++){
+        if (temp->next == NULL) {
         printf("Invalid position. Node doesn't exist.\n");
         return;
     }
-
+    temp = temp->next;
+    }
     if (temp->prev != NULL)
         temp->prev->next = temp->next;
 
